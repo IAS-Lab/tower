@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: AWS
+  hosts: 18.234.251.147
   become: yes
   tasks:
   - name: Install the httpd rpm
