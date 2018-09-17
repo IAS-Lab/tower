@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: localhost
+  hosts: AWS
   become: yes
   tasks:
   - name: Install the httpd rpm
