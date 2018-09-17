@@ -1,5 +1,5 @@
 ---
- - hosts: netapp
+ - hosts: localhost
    gather_facts: no
    tasks:
      - name: Create Demo Clone FlexClone from SnapMirror
