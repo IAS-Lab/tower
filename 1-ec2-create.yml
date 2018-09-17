@@ -26,7 +26,7 @@
       count_tag:
          Env: Demo 
       instance_tags:
-         Name: ansible-aws-rhs
+         Name: ansible-aws-tower
          Project: RHS-Demo
          Env: Demo
     register: ec2
