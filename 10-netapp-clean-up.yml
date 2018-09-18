@@ -1,6 +1,6 @@
 ---
  - name: Delete Demo Clone 
-   hosts: localhost
+   hosts: local
    gather_facts: no
    tasks:
      name: Delete Volume
