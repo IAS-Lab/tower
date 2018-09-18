@@ -1,6 +1,6 @@
 ---
 - name: Import apache directory configuration
-  hosts: tag_Env_Demo
+  hosts: ec2
   become: yes
   tasks:
    - name: Copy httpd.conf file
