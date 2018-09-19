@@ -11,8 +11,6 @@
 #      key_name: "{{key_name}}"
        state: absent
        region: "{{aws_region}}"
-       instance_tags:
-         Name: ansible-aws-tower
 #      instance_ids: "{{ ansible_ec2_instance_id }}"
       delegate_to: localhost
      
