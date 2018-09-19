@@ -1,6 +1,6 @@
 ---
  - name: Terminate tagged instances
-   hosts: ec2
+   hosts: localhost
    tasks:
     - ec2_metadata_facts:
     - ec2:
