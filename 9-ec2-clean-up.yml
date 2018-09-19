@@ -1,6 +1,6 @@
 ---
  - name: Terminate tagged instances
-   hosts: localhost
+   hosts: ec2
    connection: local
    gather_facts: False
    tasks:
