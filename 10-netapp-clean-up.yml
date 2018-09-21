@@ -1,14 +1,13 @@
----
- - name: Delete Demo Clone 
-   hosts: netapp
+--- 
+ - hosts: localhost
    gather_facts: no
    tasks:
-     name: Delete Volume
-     na_cdot_volume:
-       state: absent
-       name: "DemoClone"
-       vserver: "svm_RHSAnsible"
-       hostname: "{{ netapp_hostname }}"
-       username: "{{ netapp_username }}"
-       password: "{{ netapp_password }}"
+     - name: Delete Volume
+       na_cdot_volume:
+         state: absent
+         name: "DemoClone"
+         vserver: "svm_RHSAnsible"
+         hostname: "{{ netapp_hostname }}"
+         username: "{{ netapp_username }}"
+         password: "{{ netapp_password }}"
 
