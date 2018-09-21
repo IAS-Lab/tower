@@ -3,7 +3,7 @@
    gather_facts: no
    tasks:
      - name: Get NetApp Snapshot Info
-       raw: volume snapshot show
+       raw: volume snapshot show -vserver svm_RHSAnsible -volume RHSAnsible_copy
        register: ontap_snap_info
      - debug: var=ontap_snap_info
      
