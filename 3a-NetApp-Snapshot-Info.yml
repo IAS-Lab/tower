@@ -2,8 +2,8 @@
  - hosts: netapp
    gather_facts: no
    tasks:
-     - name: Get ONTAP Version
+     - name: Get NetApp Snapshot Info
        raw: volume snapshot show
-       register: ontap_version
-     - debug: var=ontap_version
+       register: ontap_snap_info
+     - debug: var=ontap_snap_info
      
