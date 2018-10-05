@@ -16,7 +16,7 @@
      - name: Gather snapshot info
        set_stats:
          data:
-           snapshot_info: "{{result.stdout}}"
+           snapshot_name: "{{result.stdout}}"
      
 #     - local_action: debug msg={{result.stdout}}
 #       register: snapshot_info
