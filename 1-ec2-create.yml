@@ -39,3 +39,7 @@
          Project: RHS-Demo
          Env: Demo
     register: ec2
+  - name: Wait for port 22 to become open on the host
+    wait_for:
+      port: 22
+
